@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 7, 2024 9:27:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Disciplina" table="disciplina" catalog="phpmyadmin" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" />
+        </property>
+        <property name="chs" type="java.lang.Integer">
+            <column name="chs" />
+        </property>
+        <property name="credito" type="java.lang.Integer">
+            <column name="credito" />
+        </property>
+    </class>
+</hibernate-mapping>
